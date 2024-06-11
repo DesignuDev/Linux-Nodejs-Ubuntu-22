@@ -16,12 +16,17 @@ sudo mysql -e "GRANT ALL PRIVILEGES ON dev.* TO 'dev'@'localhost' WITH GRANT OPT
 sudo mysql -e "FLUSH PRIVILEGES;"
 
 # npm install yarn
-sudo npm install yarn -g
+sudo npm install -g corepack
+
+sudo corepack enable
+
+sudo yarn set version stable
+sudo yarn -y install
 
 # Install Cron / Axios / MySQL
-sudo yarn add node-cron -s
-sudo yarn add axios -s
-sudo yarn add mysql -s
+sudo yarn add -y -s node-cron
+sudo yarn add -y -s axios
+sudo yarn add -y -s mysql
 
 echo "Node.js Enviroment set up"
 echo "MySQL: dev:password"
