@@ -23,10 +23,5 @@ sudo corepack enable
 sudo yarn set version stable
 sudo yarn -y install
 
-# Install Cron / Axios / MySQL
-sudo yarn add -y -s node-cron
-sudo yarn add -y -s axios
-sudo yarn add -y -s mysql2
-
 echo "Node.js Enviroment set up"
 echo "MySQL: dev:password"
